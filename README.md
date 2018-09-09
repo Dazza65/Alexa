@@ -75,3 +75,15 @@ cp en-US.json en-AU.json
 ```
 ask deploy -p <profile>
 ```
+
+## Update Lambda function code
+The ask cli is a bit buggy and doesn't seem to allow deploying later versions of the lambda code to other regions outside of `us-east-1`
+
+Revert to using the `aws cli` command instead
+1. Create a zip file of the custom code
+```
+cd lambda/custom
+zip -r ../../index.zip *
+cd ../..
+aws lambda update-function-code --function-name <your function name> --profile <your aws profile> --zip-file fileb://index.zip --region <region to deploy to>
+```
