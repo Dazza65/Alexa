@@ -2,6 +2,12 @@
 
 I've put this together in an attempt to show how to get an Alexa skill working in multiple regions (including Australia) using the CLI as the documentation available is rather vague.
 
+* [Prerequisites](#prerequisites)
+* [New Skill](#new-skill)
+* [Update Lambda function code](#Update-Lambda-function-code)
+
+
+
 ## Prerequisites
 1. You have an IAM user configured with the appropriate role.
 1. You have the ASK CLI installed
