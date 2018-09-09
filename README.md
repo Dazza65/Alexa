@@ -4,7 +4,7 @@ I've put this together in an attempt to show how to get an Alexa skill working i
 
 * [Prerequisites](#prerequisites)
 * [New Skill](#new-skill)
-* [Update Lambda function code](#Update-Lambda-function-code)
+* [Update Lambda function code](#update-lambda-function-code)
 
 
 
